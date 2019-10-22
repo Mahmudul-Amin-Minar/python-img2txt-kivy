@@ -28,7 +28,7 @@ def insert_data(en, bn, en_syns, bn_syns):
     conn.commit()
     conn.close()
 
-with open('C://Users//Humayun Kabir Sumon//Desktop//kivy app//ocr//BengaliDictionary.json', 'r', encoding='utf8') as myfile:
+with open('C://Users//username//Desktop//kivy app//ocr//BengaliDictionary.json', 'r', encoding='utf8') as myfile:
     data = myfile.read()
 
 decoded_data = data.encode().decode('utf-8-sig')
