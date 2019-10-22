@@ -1,0 +1,111 @@
+#:kivy 1.11.1
+WindowManager:
+    Root:
+    SearchWindow:
+    SearchResultWindow:
+
+<Root>:
+    name: 'main'
+    FloatLayout:
+        orientation: 'vertical'
+        Label:
+            text: "Text Recognition, phrase & word meaning"
+            color: 0,0,0,1
+            pos_hint: {'center_x': .5, 'center_y': .9}
+            font_size: 29
+        Button:
+            color: 1, 1, 1, 1
+            font_size: 26
+            size_hint: .3, .2
+            id: imginput
+            text: 'Upload an Image'
+            pos_hint: {'center_x': .5, 'center_y': .7}
+            on_release: root.show_load_list()
+        Button:
+            color: 1, 1, 1, 1
+            font_size: 26
+            size_hint: .3, .2
+            id: txtinput
+            text: 'Search word/phrase'
+            pos_hint: {'center_x': .5, 'center_y': .5}
+            on_release: 
+                app.root.current = "search"
+                root.manager.transition.direction = "left"
+        Button:
+            color: 1, 1, 1, 1
+            background_color: 0, 1, 0, 1
+            font_size: 26
+            size_hint: .3, .2
+            id: txtinput
+            text: 'Add New Word'
+            pos_hint: {'center_x': .5, 'center_y': .3}
+            on_release: 
+                root.add_new_word()
+
+<SearchWindow>:
+    name: "search"
+    output: output
+    text_field: text_field
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols: 2
+            size: root.width * 0.8, root.height * 0.5
+
+            row_default_height: 50
+            row_force_default: True
+            center: root.width / 2, root.height / 2
+
+            TextInput:
+                id: text_field
+                text: ''
+                font_size: 28
+                multiline: False
+
+            Button:
+                id: s_but
+                text: 'Search'
+                padding_right: 0
+                width: 10
+                on_release:
+                    root.find_word(text_field)
+
+        BoxLayout:
+            size: root.size
+            orientation: "horizontal"
+            Label:
+                id: output
+                font_size: 24
+                text_size: self.width, None
+                size_hint_y: None
+                height: self.texture_size[1]
+                text: ''
+        FloatLayout:
+            Button:
+                text: "Back"
+                pos: 0,0
+                size_hint: .3, .2
+                on_release: 
+                    app.root.current = "main"
+                    root.manager.transition.direction = "right"
+
+<LoadDialog>:
+    BoxLayout:
+        size: root.size
+        pos: root.pos
+        orientation: "vertical"
+        FileChooserIconView:
+            id: filechooser
+            path: './'
+        BoxLayout:
+            size_hint_y: None
+            height: 30
+            Button:
+                text: "Cancel"
+                on_release: root.cancel()
+            Button:
+                text: "Load"
+                on_release:
+                    root.img(filechooser.path, filechooser.selection)
+                    root.show_result()
+
