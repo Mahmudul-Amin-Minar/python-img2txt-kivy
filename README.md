@@ -16,25 +16,25 @@ from images and find important data from it and make it computer editable.
 Extracting Text from Image (OCR) using [PyTesseract](https://pypi.org/project/pytesseract/) and [Kivy Framework](https://kivy.org/#home).
 
 ## Home Window
-![Home Window](https://github.com/Mahmudul-Amin-Minar/python-img2txt-kivy/tree/master/images/1.PNG)
+![Home Window](https://github.com/Mahmudul-Amin-Minar/python-img2txt-kivy/blob/master/images/1.PNG)
 
 ## Image File Insert
-![Image File Insert](https://github.com/Mahmudul-Amin-Minar/python-img2txt-kivy/tree/master/images/2.PNG)
+![Image File Insert](https://github.com/Mahmudul-Amin-Minar/python-img2txt-kivy/blob/master/images/2.PNG)
 
 ## Extracted Text from Image
-![Extracted Text from Image](https://github.com/Mahmudul-Amin-Minar/python-img2txt-kivy/tree/master/images/3.PNG)
+![Extracted Text from Image](https://github.com/Mahmudul-Amin-Minar/python-img2txt-kivy/blob/master/images/3.PNG)
 
 ## Bangla Word Meaning
-![Bangla Word Meaning](https://github.com/Mahmudul-Amin-Minar/python-img2txt-kivy/tree/master/images/4.PNG)
+![Bangla Word Meaning](https://github.com/Mahmudul-Amin-Minar/python-img2txt-kivy/blob/master/images/4.PNG)
 
 ## Phrases Detection and Bangla Meaning
-![Phrases Detection and Bangla Meaning](https://github.com/Mahmudul-Amin-Minar/python-img2txt-kivy/tree/master/images/5.PNG)
+![Phrases Detection and Bangla Meaning](https://github.com/Mahmudul-Amin-Minar/python-img2txt-kivy/blob/master/images/5.PNG)
 
 ## Word Search
-![Word Search](https://github.com/Mahmudul-Amin-Minar/python-img2txt-kivy/tree/master/images/6.PNG)
+![Word Search](https://github.com/Mahmudul-Amin-Minar/python-img2txt-kivy/blob/master/images/6.PNG)
 
 ## Word Information
-![Word Information](https://github.com/Mahmudul-Amin-Minar/python-img2txt-kivy/tree/master/images/7.PNG)
+![Word Information](https://github.com/Mahmudul-Amin-Minar/python-img2txt-kivy/blob/master/images/7.PNG)
 
 ## Adding New Word
-![Adding New Word](https://github.com/Mahmudul-Amin-Minar/python-img2txt-kivy/tree/master/images/8.PNG)
+![Adding New Word](https://github.com/Mahmudul-Amin-Minar/python-img2txt-kivy/blob/master/images/8.PNG)
